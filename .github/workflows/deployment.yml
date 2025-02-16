@@ -26,5 +26,7 @@ jobs:
           node-version: 18
       - name: Install dependencies
         run: npm ci      
-      - name: Deployment 
-        run: npm build         
+      - name: Build Project Deployment 
+        run: npm run build
+      - name: Deploy to Firebase
+        run: echo "Deploying to Firebase"
